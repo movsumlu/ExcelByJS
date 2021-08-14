@@ -3,6 +3,4 @@ const defaultState = {
   colState: {},
 };
 
-export const initialState = storage("excel-state")
-  ? storage("excel-state")
-  : defaultState;
+export const initialState = storage("excel-state") || defaultState;
