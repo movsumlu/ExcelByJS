@@ -1,14 +1,12 @@
-import {
-  storage
-} from '@core/utils'
+import { storage } from "@core/utils";
 
 const defaultState = {
   rowState: {},
   colState: {},
   dataState: {},
-  currentText: '',
-}
+  currentText: "",
+};
 
-export const initialState = storage('excel-state') ?
-  storage('excel-state') :
-  defaultState
+export const initialState = storage("excel-state")
+  ? storage("excel-state")
+  : defaultState;

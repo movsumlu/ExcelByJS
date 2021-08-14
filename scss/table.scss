@@ -58,7 +58,6 @@
     white-space: nowrap;
     outline: none;
 
-
     &.selected {
       border: none;
       outline: 2px solid $primary-color;
@@ -97,5 +96,4 @@
       cursor: row-resize;
     }
   }
-
 }
