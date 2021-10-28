@@ -1,7 +1,7 @@
-import { Excel } from "@/components/excel/Excel";
-import { Header } from "@/components/header/Header";
-import { Toolbar } from "@/components/toolbar/Toolbar";
-import { Formula } from "@/components/formula/Formula";
+import { Excel } from "@/components/Excel";
+import { Header } from "@/components/Header";
+import { Toolbar } from "@/components/Toolbar";
+import { Formula } from "@/components/Formula";
 import { Table } from "@/components/table/Table";
 import { createStore } from "@core/createStore";
 import { rootReducer } from "@/redux/rootReducer";
