@@ -1,5 +1,5 @@
 {
-  "name": "excelbyjavascript",
+  "name": "excel-app",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack --mode production",

@@ -2,7 +2,6 @@ export class Emitter {
   constructor() {
     this.listeners = {};
   }
-
   emit(event, ...args) {
     if (!Array.isArray(this.listeners[event])) {
       return false;
@@ -12,7 +11,6 @@ export class Emitter {
     });
     return true;
   }
-
   subscribe(event, fn) {
     this.listeners[event] = this.listeners[event] || [];
     this.listeners[event].push(fn);

@@ -1,4 +1,4 @@
-import { $ } from "@core/dom";
+import { $ } from "@core/DOM";
 import { ActiveRoute } from "@core/routes/ActiveRoute";
 
 export class Router {
@@ -16,12 +16,10 @@ export class Router {
 
     this.init();
   }
-
   init() {
     window.addEventListener("hashchange", this.changePageHandler);
     this.changePageHandler();
   }
-
   changePageHandler() {
     if (this.page) {
       this.page.destroy();
@@ -39,7 +37,6 @@ export class Router {
 
     this.page.afterRender();
   }
-
   destroy() {
     window.removeEventListener("hashchange", this.changePageHandler);
   }

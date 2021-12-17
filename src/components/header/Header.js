@@ -1,9 +1,9 @@
-import { ExcelComponent } from "@core/ExcelComponent";
-import { $ } from "@core/dom";
-import { changeTitle } from "@/redux/actions";
 import { defaultTitle } from "@/constants";
-import { debounce } from "@core/utils";
+import { changeTitle } from "@/redux/actions";
+import { $ } from "@core/DOM";
+import { ExcelComponent } from "@core/ExcelComponent";
 import { ActiveRoute } from "@core/routes/ActiveRoute";
+import { debounce } from "@core/utils";
 
 export class Header extends ExcelComponent {
   static className = "excel__header";
@@ -15,11 +15,9 @@ export class Header extends ExcelComponent {
       ...options,
     });
   }
-
   prepare() {
     this.onInput = debounce(this.onInput, 300);
   }
-
   toHTML() {
     const title = this.store.getState().title || defaultTitle;
     return `
@@ -38,7 +36,6 @@ export class Header extends ExcelComponent {
       </div>
     `;
   }
-
   onClick(event) {
     const $target = $(event.target);
 

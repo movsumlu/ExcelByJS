@@ -1,5 +1,5 @@
+import { $ } from "@core/DOM";
 import { Page } from "@core/Page";
-import { $ } from "@core/dom";
 import { createRecordsTable } from "./dashboard.functions";
 
 export class DashboardPage extends Page {
@@ -13,7 +13,7 @@ export class DashboardPage extends Page {
       <div class="db__new">
         <div class="db__view">
           <a href="#excel/${now}" class="db__create">
-            Новая <br /> Таблица
+            Добавить<br />таблицу
           </a>
         </div>
       </div>

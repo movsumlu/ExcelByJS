@@ -1,4 +1,4 @@
-import { $ } from "@core/dom";
+import { $ } from "@core/DOM";
 
 export function resizeHandler($root, event) {
   return new Promise((resolve) => {
@@ -38,7 +38,6 @@ export function resizeHandler($root, event) {
       } else {
         $parent.css({ height: value + "px" });
       }
-
       resolve({
         value,
         type,

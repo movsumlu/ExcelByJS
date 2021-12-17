@@ -1,6 +1,6 @@
-import { toInlineStyles } from "@core/utils";
 import { defaultStyles } from "@/constants";
 import { parse } from "@core/parse";
+import { toInlineStyles } from "@core/utils";
 
 const CODES = {
   A: 65,
@@ -111,6 +111,5 @@ export function createTable(rowsCount = 15, state = {}) {
 
     rows.push(createRow(row + 1, cells, state.rowState));
   }
-
   return rows.join("");
 }
